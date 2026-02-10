@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Projects - Kanya Homes | Successfully Delivered Apartments in Chennai</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .completed-projects-section {
+            padding: 80px 0;
+            background: transparent;
+        }
+
+        .completed-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .completed-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .completed-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .completed-card .card-image {
+            height: 220px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .completed-card .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .completed-card .card-image .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+        }
+
+        .completed-card .card-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .completed-card .card-content {
+            padding: 24px;
+        }
+
+        .completed-card .project-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+
+        .completed-card .location {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+
+        .completed-card .location ion-icon {
+            color: #D97706;
+            font-size: 18px;
+        }
+
+        .completed-card .features-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .completed-card .feature-tag {
+            background: #f3f4f6;
+            color: #374151;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .completed-card .feature-tag ion-icon {
+            color: #10b981;
+        }
+
+        .completed-card .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .completed-card .project-year {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        .completed-card .project-year span {
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .page-header h1 {
+            font-size: 2.8rem;
+            color: white;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            color: #D97706;
+        }
+
+        .breadcrumb span {
+            color: #D97706;
+            font-weight: 600;
+        }
+
+        .stats-banner {
+            background: linear-gradient(135deg, #D97706 0%, #b45309 100%);
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .stats-banner .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-item .number {
+            font-size: 3rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .stat-item .label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .cta-section {
+            background: transparent;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            color: #1a1a2e;
+            margin-bottom: 16px;
+        }
+
+        .cta-section .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-section .btn ion-icon {
+            font-size: 18px;
+        }
+
+        .cta-section p {
+            color: #6b7280;
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .completed-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-item .number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- #HEADER -->
+    <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+
+        <div class="header-top">
+            <div class="container">
+
+                <ul class="header-top-list">
+
+                    <li>
+                        <a href="mailto:kanya.chn@gmail.com" class="header-top-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                            <span>kanya.chn@gmail.com</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="header-top-link">
+                            <ion-icon name="location-outline"></ion-icon>
+
+                            <address>No: 48A, Tharamani 100 Feet Road, Velachery, Chennai 600042</address>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="wrapper">
+                    <ul class="header-top-social-list">
+                        <li>
+                            <a href="https://www.facebook.com/share/1b1eZ7JWbH/" target="_blank"
+                                class="header-top-social-link facebook" aria-label="Facebook">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://x.com/Kanyahomes" target="_blank" class="header-top-social-link twitter"
+                                aria-label="Twitter">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/kanya.homes?igsh=dDk1aXVwcWNydjg0" target="_blank"
+                                class="header-top-social-link instagram" aria-label="Instagram">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+
+                <a href="index.html" class="logo">
+                    <img src="./logo-kanya.png" alt="Kanya Homes logo">
+                </a>
+
+                <nav class="navbar" data-navbar>
+
+                    <div class="navbar-top">
+
+                        <a href="index.html" class="logo">
+                            <img src="./logo-kanya.png" alt="Kanya Homes logo">
+                        </a>
+
+                        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                    </div>
+
+                    <div class="navbar-bottom">
+                        <ul class="navbar-list">
+
+                            <li>
+                                <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="about.html" class="navbar-link" data-nav-link
+                                    style="display: flex; align-items: center; gap: 4px;">
+                                    About Us <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about.html#company">Our Company</a></li>
+                                    <li><a href="about.html#vision">Vision & Mission</a></li>
+                                    <li><a href="about.html#leadership">Leadership Team</a></li>
+                                    <li><a href="about.html#why-choose">Why Choose Us</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="property.html" class="navbar-link active" data-nav-link
+                                    style="display: flex; align-items: center; gap: 4px;">
+                                    Project <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="property.html#ongoing">Ongoing Projects</a></li>
+                                    <li><a href="completed.html">Completed Projects</a></li>
+                                    <li><a href="future.html">Future Projects</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="services.html" class="navbar-link" data-nav-link>
+                                    Services
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+
+                <div class="header-bottom-actions">
+
+                    <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+
+                        <span>Menu</span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <article>
+
+            <!-- Page Header -->
+            <section class="page-header">
+                <div class="container">
+                    <h1>Completed Projects</h1>
+                    <p>Witness the exclusivity and ecstatic nature of our homes! Over 700+ successfully delivered
+                        projects across Chennai.</p>
+
+                </div>
+            </section>
+
+
+            <!-- Completed Projects Grid -->
+            <section class="completed-projects-section">
+                <div class="container">
+
+                    <div class="section-heading-wrapper" style="text-align: center; margin-bottom: 20px;">
+                        <h1 class="section-heading-text" style="font-size: 19px;">Our Legacy of Excellence</h1>
+                        <svg class="section-heading-svg" viewBox="0 0 1000 12" preserveAspectRatio="none"
+                            style="height: 8px; width: 450px; position: relative; margin: 0 auto; display: block;">
+                            <path d="M 0,12 Q 500,0 1000,12 L 1000,12 L 0,12 Z" fill="#D97706" />
+                        </svg>
+                    </div>
+
+                    <div class="completed-grid">
+
+                        <!-- Sampoorna Velachery -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-1.jpg" alt="Sampoorna Velachery">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Sampoorna</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Velachery, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Premium
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> 2 BHK
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kanya Velachery -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-2.jpg" alt="Kanya Velachery">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Kanya</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Velachery, Chennai (Our Own Building)</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Flagship
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Premium
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sri Hari -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-3.jpg" alt="Sri Hari">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Sri Hari</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Pallikaranai, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Quality
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> 2 BHK
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Srinivasa -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-4.png" alt="Srinivasa">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Srinivasa</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Pallikaranai, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Modern
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Spacious
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sri Venkatava -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-1.jpg" alt="Sri Venkatava">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Sri Venkatava</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Pallikaranai, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Luxury
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> 2 BHK
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sri Suka Pallikaranai -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-2.jpg" alt="Sri Suka">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Sri Suka</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Pallikaranai, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Premium
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Vastu
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Srishti -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-3.jpg" alt="Srishti">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Srishti</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Pallikaranai, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Elegant
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Modern
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pranav Pallikaranai -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-4.png" alt="Pranav">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Pranav</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Pallikaranai, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Quality
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Affordable
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kanya Park View K.K.Nagar -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-1.jpg" alt="Kanya Park View">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Kanya Park View</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>K.K. Nagar, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Park View
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Premium
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sri Harshitha -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-2.jpg" alt="Sri Harshitha">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Sri Harshitha</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Perungudi, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Luxury
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> IT Corridor
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sri Ekaa -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-3.jpg" alt="Sri Ekaa">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Sri Ekaa</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Velachery, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Exclusive
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> 2 BHK
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sri Sai -->
+                        <div class="completed-card">
+                            <div class="card-image">
+                                <img src="./assets/images/property-4.png" alt="Sri Sai">
+                                <div class="overlay"></div>
+                                <div class="card-badge">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="project-name">Sri Sai</h3>
+                                <div class="location">
+                                    <ion-icon name="location"></ion-icon>
+                                    <span>Pallikaranai, Chennai</span>
+                                </div>
+                                <div class="features-list">
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Quality
+                                    </span>
+                                    <span class="feature-tag">
+                                        <ion-icon name="checkmark-circle"></ion-icon> Value
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-year">Status: <span>Delivered</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Stats Banner -->
+            <section class="stats-banner">
+                <div class="container">
+                    <div class="stat-item">
+                        <span class="number">700+</span>
+                        <span class="label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number">26,000+</span>
+                        <span class="label">Happy Families</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number">15+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number">6</span>
+                        <span class="label">Awards Won</span>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="container">
+                    <h2>Interested in Our Ongoing Projects?</h2>
+                    <p>Explore our current developments and book your dream home today!</p>
+                    <a href="property.html" class="btn">
+                        <span>View Ongoing Projects</span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+    <!-- #FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo">
+                        <img src="./logo-kanya.png" alt="Kanya Homes logo">
+                    </a>
+
+                    <ul class="contact-list">
+
+                        <li>
+                            <a class="contact-link" style="cursor: default;">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <address>'Kanya', No: 48A, Tharamani 100 Feet Road, Opp To TCS, Velachery, Chennai
+                                    600042</address>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tel:04422436272" class="contact-link">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <span>044 2243 6272</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:kanya.chn@gmail.com" class="contact-link">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <span>kanya.chn@gmail.com</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="https://www.facebook.com/share/1b1eZ7JWbH/" target="_blank" class="footer-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://x.com/Kanyahomes" target="_blank" class="footer-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/kanya.homes?igsh=dDk1aXVwcWNydjg0" target="_blank"
+                                class="footer-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-link-box">
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Company</p>
+                        </li>
+
+                        <li>
+                            <a href="about.html" class="footer-link">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">Our Services</a>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" class="footer-link">FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html" class="footer-link">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Our Projects</p>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">On Going Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="completed.html" class="footer-link">Completed Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">Future Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">Velachery</a>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">Pallikaranai</a>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">Medavakkam</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Services</p>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">1 BHK Flats</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">2 BHK Flats</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">Land Development</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">Interior Design</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">Maintenance</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html" class="footer-link">Get Quote</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2026 <a href="index.html">Kanya Homes Pvt Ltd</a>. All Rights Reserved
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Sticky Header Script -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const headerBottom = document.querySelector('.header-bottom');
+            const headerTop = document.querySelector('.header-top');
+
+            if (window.scrollY > 0) {
+                headerBottom.classList.add('sticky');
+                if (headerTop) {
+                    headerTop.style.display = 'none';
+                }
+            } else {
+                headerBottom.classList.remove('sticky');
+                if (headerTop) {
+                    headerTop.style.display = 'block';
+                }
+            }
+        });
+    </script>
+
+    <!-- Mobile menu script -->
+    <script>
+        const navOpenBtn = document.querySelector('[data-nav-open-btn]');
+        const navCloseBtn = document.querySelector('[data-nav-close-btn]');
+        const navbar = document.querySelector('[data-navbar]');
+        const overlay = document.querySelector('[data-overlay]');
+
+        const navElemArr = [navOpenBtn, navCloseBtn, overlay];
+
+        for (let i = 0; i < navElemArr.length; i++) {
+            navElemArr[i].addEventListener('click', function () {
+                navbar.classList.toggle('active');
+                overlay.classList.toggle('active');
+            });
+        }
+    </script>
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

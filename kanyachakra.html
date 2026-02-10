@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanya Chakra - Apartments in Pallikaranai | Kanya Homes</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Specific styles for Kanya Aadhav page to match design language */
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .about-section {
+            padding: 60px 0;
+            background: transparent;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            background: #f0f2f5;
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border: 1px solid #e5e7eb;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item h3 {
+            color: #D97706;
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            color: #D97706;
+            line-height: 1.6;
+        }
+
+        .amenities-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .amenities-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.1rem;
+            color: #374151;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .amenities-list ion-icon {
+            color: #D97706;
+            font-size: 1.5rem;
+            min-width: 24px;
+        }
+
+        .spec-item {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e1e4e8;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- #HEADER -->
+    <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+
+        <div class="header-top">
+            <div class="container">
+
+                <ul class="header-top-list">
+
+                    <li>
+                        <a href="mailto:kanya.chn@gmail.com" class="header-top-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                            <span>kanya.chn@gmail.com</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="header-top-link">
+                            <ion-icon name="location-outline"></ion-icon>
+
+                            <address>No: 48A, Tharamani 100 Feet Road, Velachery, Chennai 600042</address>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="wrapper">
+                    <ul class="header-top-social-list">
+                        <li>
+                            <a href="https://www.facebook.com/share/1b1eZ7JWbH/" target="_blank"
+                                class="header-top-social-link facebook" aria-label="Facebook">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://x.com/Kanyahomes" target="_blank" class="header-top-social-link twitter"
+                                aria-label="Twitter">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/kanya.homes?igsh=dDk1aXVwcWNydjg0" target="_blank"
+                                class="header-top-social-link instagram" aria-label="Instagram">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+
+                <a href="index.html" class="logo">
+                    <img src="./logo-kanya.png" alt="Kanya Homes logo">
+                </a>
+
+                <nav class="navbar" data-navbar>
+
+                    <div class="navbar-top">
+
+                        <a href="index.html" class="logo">
+                            <img src="./logo-kanya.png" alt="Kanya Homes logo">
+                        </a>
+
+                        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                    </div>
+
+                    <div class="navbar-bottom">
+                        <ul class="navbar-list">
+
+                            <li>
+                                <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="about.html" class="navbar-link" data-nav-link
+                                    style="display: flex; align-items: center; gap: 4px;">
+                                    About Us <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about.html#company">Our Company</a></li>
+                                    <li><a href="about.html#vision">Vision & Mission</a></li>
+                                    <li><a href="about.html#leadership">Leadership Team</a></li>
+                                    <li><a href="about.html#why-choose">Why Choose Us</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="property.html" class="navbar-link active" data-nav-link
+                                    style="display: flex; align-items: center; gap: 4px;">
+                                    Project <ion-icon name="chevron-down-outline"></ion-icon>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="property.html#ongoing">Ongoing Projects</a></li>
+                                    <li><a href="completed.html">Completed Projects</a></li>
+                                    <li><a href="future.html">Future Projects</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="services.html" class="navbar-link" data-nav-link>
+                                    Services
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+
+                <div class="header-bottom-actions">
+
+                    <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+
+                        <span>Menu</span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <article>
+            <!-- Page Header -->
+            <!-- Project Hero -->
+            <section class="project-hero">
+                <div class="container">
+                    <div class="project-hero-content">
+                        <h1>Book Your Dream Apartment in Pallikaranai</h1>
+                        <p>Unlock the Door to Effortless Living at Our Selected Apartment in Pallikaranai</p>
+                    </div>
+                    <div class="project-hero-image-wrapper">
+                        <img src="./assets/images/kpost/kanya-3.png" alt="Kanya Chakra" class="project-hero-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Why Kanya Chakra?</h2>
+                        <svg viewBox="0 0 1000 12" preserveAspectRatio="none"
+                            style="height: 12px; width: 300px; margin: 0 auto; display: block;">
+                            <path d="M 0,12 Q 500,0 1000,12 L 1000,12 L 0,12 Z" fill="#D97706" />
+                        </svg>
+                    </div>
+                    <p
+                        style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: #D97706; line-height: 1.8;">
+                        Align all your desires with the apartments in Pallikaranai, where every wish finds fulfillment.
+                        Find your desired flats in Chennai from kanya Homes, now in Pallikaranai with enormous amenities
+                        and ample transportation facilities.
+                    </p>
+
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <h3><ion-icon name="location"></ion-icon> Premier Location</h3>
+                            <p>Kanya Home Chakra is an exquisite range of flats in Pallikaranai that are ultimately
+                                located centrally to locate a chain of amenities that prosper your life with utmost
+                                comfort and luxury.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><ion-icon name="list-circle"></ion-icon> Adequate Amenities</h3>
+                            <p>Kanya Home Chakra contains a spectrum of amenities that is adequate for a hassle-free
+                                life inside out. Your home is prioritized with enormous amenities such as green lift
+                                with automated rescue.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><ion-icon name="lock-closed"></ion-icon> Assured Security</h3>
+                            <p>Kanya Home Chakra homes is a creatively curated range of flats in pallikaranai made with
+                                CCTV Surveillance all around the premises and durable construction with adequate
+                                facilities.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><ion-icon name="construct"></ion-icon> Accurate Fixtures</h3>
+                            <p>Kanya Home Chakra Apartments, Pallikaranai is effectively made of aesthetic designs and
+                                fixtures as a strong foundation with supportive specifications and amenities that
+                                support your life.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><ion-icon name="home"></ion-icon> Customized Comfort</h3>
+                            <p>Kanya Home Chakra promotes your lifestyle with prospering highlights and specialities
+                                that includes your aspired customizations and unique amenities such as spacious living
+                                space.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Amenities Section -->
+            <!-- Amenities Section -->
+            <section class="amenities-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Kanya Chakra Amenities</h2>
+                        <!-- <p class="section-subtitle" style="margin-top: 10px; color: #666; font-size: 0.95rem;">Quality -->
+                        <!-- amenities transform spaces into experiences, turning the ordinary into the extraordinary</p> -->
+                        <svg viewBox="0 0 1000 12" preserveAspectRatio="none"
+                            style="height: 12px; width: 380px; margin: 15px auto; display: block;">
+                            <path d="M 0,12 Q 500,0 1000,12 L 1000,12 L 0,12 Z" fill="#D97706" />
+                        </svg>
+                    </div>
+
+                    <div class="amenities-grid">
+                        <div class="amenity-card">
+                            <ion-icon name="flash" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Power Backup</h3>
+                            <p class="amenity-desc">24/7 uninterrupted power for all.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="water" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Water Supply</h3>
+                            <p class="amenity-desc">Continuous treated water supply available.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="arrow-up-circle" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Lift Facility</h3>
+                            <p class="amenity-desc">Automatic rescue device enabled lift.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="flame" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Fire Safety</h3>
+                            <p class="amenity-desc">Advanced fire safety systems installed.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="shield-checkmark" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Security System</h3>
+                            <p class="amenity-desc">Round-the-clock security personnel.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="videocam" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">CCTV Surveillance</h3>
+                            <p class="amenity-desc">24x7 monitoring for total safety.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="car" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Parking</h3>
+                            <p class="amenity-desc">Spacious covered car parking slots.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="happy" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Children’s Play Area</h3>
+                            <p class="amenity-desc">Safe and fun play equipment.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="leaf" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Garden</h3>
+                            <p class="amenity-desc">Lush green landscaped garden area.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="people" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Multipurpose Hall</h3>
+                            <p class="amenity-desc">Space for events and gatherings.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="cloud-download" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Rainwater Harvesting</h3>
+                            <p class="amenity-desc">Eco-friendly water conservation system.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <ion-icon name="build" class="amenity-icon"></ion-icon>
+                            <h3 class="amenity-title">Maintenance Office</h3>
+                            <p class="amenity-desc">Dedicated on-site maintenance support.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Plans Section -->
+            <section class="plans-section" id="plans">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Plans</h2>
+                        <svg viewBox="0 0 1000 12" preserveAspectRatio="none"
+                            style="height: 12px; width: 100px; margin: 0 auto; display: block;">
+                            <path d="M 0,12 Q 500,0 1000,12 L 1000,12 L 0,12 Z" fill="#D97706" />
+                        </svg>
+                    </div>
+
+                    <div class="plans-tabs">
+                        <button class="plan-tab active" data-tab="parking">Car Parking</button>
+                        <button class="plan-tab" data-tab="first">First Floor</button>
+                        <button class="plan-tab" data-tab="second">Second Floor</button>
+                        <button class="plan-tab" data-tab="third">Third Floor</button>
+                        <button class="plan-tab" data-tab="location">Location</button>
+                    </div>
+
+                    <div class="plan-content active" id="parking">
+                        <div class="plan-image-wrapper">
+                            <img src="./assets/images/kpost/Parking.png" alt="Car Parking Plan" class="plan-image">
+                        </div>
+                    </div>
+
+                    <div class="plan-content" id="first">
+                        <div class="plan-image-wrapper">
+                            <img src="./assets/images/kpost/Hall.png" alt="First Floor Plan" class="plan-image">
+                        </div>
+                    </div>
+
+                    <div class="plan-content" id="second">
+                        <div class="plan-image-wrapper">
+                            <img src="./assets/images/kpost/Living%20area.png" alt="Second Floor Plan"
+                                class="plan-image">
+                        </div>
+                    </div>
+
+                    <div class="plan-content" id="third">
+                        <div class="plan-image-wrapper">
+                            <img src="./assets/images/kpost/Hall.png" alt="Third Floor Plan" class="plan-image">
+                        </div>
+                    </div>
+
+                    <div class="plan-content" id="location">
+                        <div class="plan-image-wrapper" style="height: 450px;">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Kanya+Chakra,+Chennai&hl=en&z=14&amp;output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>What We Do</h2>
+                        <svg viewBox="0 0 1000 12" preserveAspectRatio="none"
+                            style="height: 12px; width: 220px; margin: 0 auto; display: block;">
+                            <path d="M 0,12 Q 500,0 1000,12 L 1000,12 L 0,12 Z" fill="#D97706" />
+                        </svg>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-item spec-item">
+                            <h3>Elevated Basement Design</h3>
+                            <p>Experience the artistry of elevated living with our meticulously designed raised
+                                basements that elevates grandeur and sophistication.</p>
+                        </div>
+                        <div class="feature-item spec-item">
+                            <h3>Spacious High Roofs</h3>
+                            <p>Crafted with intricate designs, Kanya Homes always ensures in crafting maximize vertical
+                                space that provides a sense of openness.</p>
+                        </div>
+                        <div class="feature-item spec-item">
+                            <h3>Smooth Finish Walls</h3>
+                            <p>Indulge in the seamless beauty of our designed walls with first-quality putty application
+                                that ensures a smooth and flawless finish.</p>
+                        </div>
+                        <div class="feature-item spec-item">
+                            <h3>Granite Framing</h3>
+                            <p>Our granite framing and wooden shutters strike a perfect balance between functionality
+                                and aesthetic appeal for washrooms.</p>
+                        </div>
+                        <div class="feature-item spec-item">
+                            <h3>Waterproof Epoxy Tiles</h3>
+                            <p>Kanya Homes offers unique waterproof epoxy-coated toilet tiles to improve your living
+                                space's durability and endurance.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section"
+                style="background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%); padding: 80px 0; color: white;">
+                <div class="container">
+                    <h2 style="color: white; margin-bottom: 20px;">Book Your Unit Today!</h2>
+                    <p style="margin-bottom: 30px; color: rgba(255,255,255,0.8);">Don't miss out on this opportunity to
+                        own a luxury apartment in Pallikaranai.</p>
+                    <a href="contact.html" class="btn" style="background: #D97706; border: none;">
+                        <span>Contact Us Now</span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Other Projects Section -->
+    <section class="other-projects-section">
+        <div class="container">
+            <h2 class="other-projects-title">Our Other Projects</h2>
+            <span class="other-projects-subtitle">"Our incredible homes inspire you with its endless exclusivity,
+                ecstasy and comfort!!.."</span>
+            <p class="other-projects-desc">Align all your desires with the apartments in Pallikaranai named as Kanya
+                Chakra, where every wish finds fulfillment. Find your desired flats in Chennai from Kanya Homes, now in
+                Pallikaranai with enormous amenities.</p>
+
+            <div class="other-projects-grid">
+                <!-- Kanya Aadhav -->
+                <div class="project-card">
+                    <div class="project-card-image-wrapper">
+                        <img src="./assets/images/kpost/kanya-1.png" alt="Kanya Aadhav" class="project-card-image">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">KANYA AADHAV</h3>
+                        <p class="project-card-text">Kanya AADHAV is located Pallikaranai which connects to nearest Bus
+                            Stands, Market, Metro and Biggest Shopping Centres.</p>
+                        <a href="kanyaaadhav.html" class="project-card-btn">See Project</a>
+                    </div>
+                </div>
+
+                <!-- Kanya Badri -->
+                <div class="project-card">
+                    <div class="project-card-image-wrapper">
+                        <img src="./assets/images/kpost/kanya-2.png" alt="Kanya Badri" class="project-card-image">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">KANYA BADRI</h3>
+                        <p class="project-card-text">Kanya BADRI is located Pallikaranai which connects to nearest Bus
+                            Stands, Market, Metro and Biggest Shopping Centres.</p>
+                        <a href="kanyabadri.html" class="project-card-btn">See Project</a>
+                    </div>
+                </div>
+
+                <!-- Kanya Manjanai -->
+                <div class="project-card">
+                    <div class="project-card-image-wrapper">
+                        <img src="./assets/images/kpost/kanya-4.png" alt="Kanya Manjanai" class="project-card-image">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">KANYA MANJANAII</h3>
+                        <p class="project-card-text">Kanya MANJANAII is located Sholinganallur which connects to nearest
+                            Bus Stands, Market, Metro and Biggest Shopping Centres.</p>
+                        <a href="kanyamanjanai.html" class="project-card-btn">See Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- #FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo">
+                        <img src="./logo-kanya.png" alt="Kanya Homes logo">
+                    </a>
+
+                    <ul class="contact-list">
+
+                        <li>
+                            <a class="contact-link" style="cursor: default;">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <address>'Kanya', No: 48A, Tharamani 100 Feet Road, Opp To TCS, Velachery, Chennai
+                                    600042</address>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tel:04422436272" class="contact-link">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <span>044 2243 6272</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:kanya.chn@gmail.com" class="contact-link">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <span>kanya.chn@gmail.com</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="https://www.facebook.com/share/1b1eZ7JWbH/" target="_blank" class="footer-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://x.com/Kanyahomes" target="_blank" class="footer-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/kanya.homes?igsh=dDk1aXVwcWNydjg0" target="_blank"
+                                class="footer-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-link-box">
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Company</p>
+                        </li>
+
+                        <li>
+                            <a href="about.html" class="footer-link">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">Our Services</a>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" class="footer-link">FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html" class="footer-link">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Our Projects</p>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">On Going Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="completed.html" class="footer-link">Completed Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="future.html" class="footer-link">Future Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">Velachery</a>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">Pallikaranai</a>
+                        </li>
+
+                        <li>
+                            <a href="property.html" class="footer-link">Medavakkam</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Services</p>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">1 BHK Flats</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">2 BHK Flats</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">Land Development</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">Interior Design</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="footer-link">Maintenance</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html" class="footer-link">Get Quote</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2026 <a href="index.html">Kanya Homes Pvt Ltd</a>. All Rights Reserved
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- custom js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Sticky Header Script (if not in script.js) -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const headerBottom = document.querySelector('.header-bottom');
+
+            if (window.scrollY > 0) {
+                headerBottom.classList.add('sticky');
+            } else {
+                headerBottom.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+
+</html>
