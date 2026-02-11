@@ -744,7 +744,8 @@ a {
 }
 
 .hero-subtitle span {
-  color: var(--dark-jungle-green);
+  /* color: var(--dark-jungle-green); */
+  color: hsl(353.45deg 95.2% 24.51%);
   font-size: var(--fs-5);
   font-weight: var(--fw-700);
 }
