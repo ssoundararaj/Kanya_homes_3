@@ -2060,6 +2060,42 @@ a {
     width: 30px !important;
     height: 30px !important;
   }
+
+  /* Stack Features List Vertically */
+  .features-list>li {
+    width: 100%;
+  }
+
+  /* Adjust Project Card Amenities for Mobile */
+  .property-card .card-list {
+    justify-content: center;
+    /* Center items */
+    gap: 10px;
+  }
+
+  .property-card .card-item {
+    width: 45%;
+    /* 2 items per row */
+    font-size: 13px;
+    /* Slightly smaller text */
+  }
+
+  .property-card .card-item ion-icon {
+    font-size: 20px;
+    /* Adjust icon size */
+  }
+
+  /* Ensure card text is readable */
+  .property-card .card-text {
+    font-size: 14px;
+    min-height: auto;
+    /* Allow auto height if needed */
+  }
+
+  .about-list {
+    grid-template-columns: 1fr;
+    /* Stack about items */
+  }
 }
 
 /**
