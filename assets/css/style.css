@@ -890,7 +890,7 @@ a {
 
 .service-card {
   position: relative;
-  background: linear-gradient(to bottom, #ffffff, #ffc57d);
+  background: linear-gradient(to bottom, #e7e2dec7, #ffc57d);
   /* background: linear-gradient(to bottom, #ffffff, #ffdfb7); */
   text-align: center;
   padding: 40px 30px;
@@ -920,7 +920,8 @@ a {
 
 .service-card .card-link {
   /* color: var(--opal); */
-  color: white;
+  /* color: white; */
+  color: hsl(355.61deg 100% 24.12%);
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
   display: flex;
@@ -930,7 +931,8 @@ a {
 }
 
 .service-card:is(:hover, :focus) .card-link {
-  color: var(--orange-soda);
+  /* color: var(--orange-soda); */
+  color: hsl(355.61deg 100% 24.12%);
 }
 
 .service-card::after {
@@ -940,7 +942,8 @@ a {
   left: 0;
   width: 0;
   height: 4px;
-  background: var(--orange-soda);
+  /* background: var(--orange-soda); */
+  background: hsl(355.61deg 100% 24.12%);
   transition: var(--transition);
 }
 
