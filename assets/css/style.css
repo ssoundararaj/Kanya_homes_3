@@ -1036,6 +1036,13 @@ a {
   color: var(--orange-soda);
 }
 
+/* Equal Height Cards */
+.property-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .property-card .card-content {
   padding: 30px 15px 15px;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
@@ -1072,36 +1079,71 @@ a {
   margin-bottom: 25px;
 }
 
+/* Redesigned Amenities: Icon Top, Text Bottom */
 .property-card .card-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
+  /* Align to top */
   row-gap: 15px;
+  justify-content: flex-start;
 }
 
 .property-card .card-item {
   padding-block: 5px;
   /* color: var(--cadet); */
   font-size: var(--fs-5);
+  display: flex;
+  flex-direction: column;
+  /* Stack vertically */
+  align-items: center;
+  /* Center horizontally */
+  text-align: center;
+  width: 30%;
+  /* Assign width for consistent layout, adjusting for spacing */
 }
 
+/* Vertical divider logic needs checking. 
+   If we use flex column, border-right might look odd if items have different heights.
+   Let's keep the border but increase height or padding if needed. */
 .property-card .card-item:not(:last-child) {
   padding-right: 15px;
   border-right: 1px solid hsla(0, 0%, 0%, 0.2);
-  margin-right: 20px;
+  margin-right: 5px;
+  /* Reduced margin to fit 3 items */
+  width: auto;
+  /* Let content dictate width or keep fixed */
+  flex: 1;
+  /* Distribute space evenly */
 }
+
+.property-card .card-item:last-child {
+  flex: 1;
+}
+
 
 .property-card .card-item :is(strong, ion-icon) {
   display: inline-block;
 }
 
 .property-card .card-item ion-icon {
-  margin-left: 2px;
-  margin-bottom: -2px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  /* Space between icon and text */
+  font-size: 24px;
+  /* Larger icon */
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid var(--dark-jungle-green);
+  /* Optional: Circle around icon like screenshot?
+  The screenshot had a circle check. The current icon is checkmark-circle-outline. 
+  Let's just scale it up. */
+  border: none;
 }
 
 .property-card .card-item span {
-  margin-top: 5px;
+  margin-top: 0;
+  line-height: 1.3;
 }
 
 .card-footer {
