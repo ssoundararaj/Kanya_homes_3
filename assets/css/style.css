@@ -1084,6 +1084,7 @@ a {
   margin-bottom: 25px;
   min-height: 110px;
   /* Force minimum height for 4 lines of text */
+  text-align: center;
 }
 
 /* Redesigned Amenities: Icon Top, Text Bottom */
