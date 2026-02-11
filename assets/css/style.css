@@ -298,7 +298,8 @@ a {
 
 .has-scrollbar {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
+  /* Changed from flex-start to stretch for equal height cards */
   gap: 15px;
   overflow-x: auto;
   margin-inline: -15px;
@@ -1041,6 +1042,10 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-height: 550px;
+  /* Enforce consistent minimum height */
+  width: 100%;
+  position: relative;
 }
 
 .property-card .card-content {
